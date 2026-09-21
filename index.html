@@ -125,10 +125,37 @@ footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
 </section>
 </main>
 <footer><div class="container footer-grid"><div><a class="logo" href="#"><span class="logo-mark">U</span><span>UNIVA YOUTH COUNCIL</span></a><p>Empowering youth. Inspiring change.</p></div><div class="footer-links"><a href="#about">About</a><a href="#departments">Deconst members = [
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="#">
+        <span class="logo-mark">U</span>
+        <span>UNIVA YOUTH COUNCIL</span>
+      </a>
+      <p>Empowering youth. Inspiring change.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#departments">Departments</a>
+      <a href="#events">Events</a>
+      <a href="#team">Members</a>
+    </div>
+  </div>
 </footer>
 
+<div class="profile-modal" id="profileModal">
+  <div class="profile-box">
+    <button class="profile-close" id="profileClose">&times;</button>
+    <h2 id="profileName"></h2>
+    <div class="role" id="profileRole"></div>
+    <p id="profileDetails"></p>
+  </div>
+</div>
+
 <script>
-  const members = [
+const members = [
   {
     name: 'Shahjaib Mohammad Hassan (Areeb)',
     role: 'Founder & President',
@@ -161,11 +188,59 @@ footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
     ].join('\n\n')
   }
 ];
-const grid=document.getElementById('memberGrid');const modal=document.getElementById('profileModal');
-function renderMembers(){grid.innerHTML=members.map((m,i)=>`<article class="member-card"><div class="member-photo">${m.photo?`<img src="${m.photo}" alt="${m.name}">`:''}</div><div class="member-body"><small>UNIVA YOUTH COUNCIL</small><h3>${m.name}</h3><p>${m.role}</p><button class="btn btn-outline" onclick="showProfile(${i})">View Details ↗</button></div></article>`).join('')}renderMembers();
-function showProfile(i){const m=members[i];document.getElementById('profileName').textContent=m.name;document.getElementById('profileRole').textContent=m.role;document.getElementById('profileDetails').textContent=m.details;modal.classList.add('open')}
-function closeProfile(){modal.classList.remove('open')}
-document.getElementById('profileClose').addEventListener('click',closeProfile);modal.addEventListener('click',e=>{if(e.target===modal)closeProfile()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeProfile()});renderMembers();
+
+const grid = document.getElementById('memberGrid');
+const modal = document.getElementById('profileModal');
+
+function renderMembers() {
+  grid.innerHTML = members.map((member, index) => `
+    <article class="member-card">
+      <div class="member-photo">
+        ${member.photo ? `<img src="${member.photo}" alt="${member.name}">` : ''}
+      </div>
+
+      <div class="member-body">
+        <small>UNIVA YOUTH COUNCIL</small>
+        <h3>${member.name}</h3>
+        <p>${member.role}</p>
+        <button class="btn btn-outline" onclick="showProfile(${index})">
+          View Details ↗
+        </button>
+      </div>
+    </article>
+  `).join('');
+}
+
+function showProfile(index) {
+  const member = members[index];
+
+  document.getElementById('profileName').textContent = member.name;
+  document.getElementById('profileRole').textContent = member.role;
+  document.getElementById('profileDetails').textContent = member.details;
+
+  modal.classList.add('open');
+}
+
+function closeProfile() {
+  modal.classList.remove('open');
+}
+
+document.getElementById('profileClose').addEventListener('click', closeProfile);
+
+modal.addEventListener('click', function(event) {
+  if (event.target === modal) {
+    closeProfile();
+  }
+});
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeProfile();
+  }
+});
+
+renderMembers();
 </script>
+
 </body>
 </html>
