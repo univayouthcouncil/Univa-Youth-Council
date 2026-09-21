@@ -71,6 +71,7 @@ footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
 @media(max-width:850px){nav{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:65px 0}.hero-art{min-height:320px}.features,.events,.team{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){h1{letter-spacing:-1px}.features,.events,.team{grid-template-columns:1fr}.section{padding:65px 0}.hero-art{min-height:290px}.art-title{font-size:2rem}.cta{padding:38px 24px;margin-bottom:65px}}
 
+/* Members' Panel */
 .member-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -94,6 +95,7 @@ footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
   line-height: 0;
 }
 
+/* Display the complete uploaded image */
 .member-photo img {
   display: block;
   width: 100%;
@@ -101,11 +103,14 @@ footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
   object-fit: contain;
 }
 
+/* Member information */
 .member-body {
   padding: 23px;
+  background: #fff;
 }
 
 .member-body small {
+  display: block;
   color: var(--blue);
   font-weight: 800;
   letter-spacing: 1px;
@@ -116,6 +121,7 @@ footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
   color: var(--navy);
   margin: 8px 0 4px;
   font-size: 1.3rem;
+  line-height: 1.4;
 }
 
 .member-body p {
@@ -175,6 +181,7 @@ footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
   color: var(--navy);
 }
 
+/* Responsive layout */
 @media (max-width: 850px) {
   .member-grid {
     grid-template-columns: repeat(2, 1fr);
