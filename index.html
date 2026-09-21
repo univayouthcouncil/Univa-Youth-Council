@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNIVA Youth Council | Empowering Youth. Inspiring Change.</title>
+<meta name="description" content="UNIVA Youth Council is a global platform where students discover their potential, develop skills, and create meaningful impact.">
+<style>
+:root{--navy:#103b73;--blue:#247fca;--sky:#eaf5ff;--ink:#14253d;--muted:#607089;--white:#fff;--line:#e5edf5}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.8px;color:var(--navy);font-size:1.2rem}
+.logo-mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;display:grid;place-items:center;font-weight:900}
+nav{display:flex;align-items:center;gap:25px;font-size:.95rem;font-weight:600}
+nav a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 23px;font-weight:800;border:1px solid transparent;transition:.2s;cursor:pointer}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 8px 20px #247fca30}
+.btn-primary:hover{transform:translateY(-2px);background:var(--navy)}
+.btn-outline{border-color:#cbdbea;color:var(--navy);background:#fff}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+.hero{background:linear-gradient(120deg,#f3f9ff 0%,#fff 55%,#e9f5ff 100%);padding:95px 0 85px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:.78rem;margin-bottom:18px}
+h1{font-size:clamp(2.5rem,5vw,4.7rem);line-height:1.08;letter-spacing:-2px;color:var(--navy);margin-bottom:22px}
+.hero p{font-size:1.08rem;color:var(--muted);max-width:590px;margin-bottom:30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-art{min-height:390px;border-radius:32px;background:linear-gradient(145deg,var(--navy),#1f77bb);position:relative;overflow:hidden;padding:30px;color:#fff;box-shadow:0 25px 65px #103b7330}
+.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #ffffff40;border-radius:50%}
+.hero-art:before{width:360px;height:360px;right:-170px;top:-100px}
+.hero-art:after{width:280px;height:280px;left:-160px;bottom:-140px}
+.art-content{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:space-between}
+.art-tag{background:#ffffff22;border:1px solid #ffffff45;border-radius:999px;padding:7px 12px;font-size:.78rem;width:max-content}
+.art-title{font-size:2.5rem;line-height:1.1;font-weight:900;max-width:350px}
+.art-bottom{display:flex;justify-content:space-between;align-items:end;gap:15px}
+.art-number{font-size:4rem;font-weight:900;line-height:1}
+.section{padding:88px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 42px}
+.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;color:var(--navy);margin-bottom:13px}
+.section-head p{color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-card{background:var(--sky);border-radius:25px;padding:35px;position:relative}
+.about-card h3{font-size:2rem;color:var(--navy);line-height:1.2;margin:20px 0 10px}
+.about-card p,.about-copy p{color:var(--muted)}
+.about-copy h2{font-size:2.5rem;color:var(--navy);line-height:1.15;margin-bottom:18px}
+.about-copy p{margin-bottom:20px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.feature,.event,.team-card{border:1px solid var(--line);border-radius:20px;padding:26px;background:#fff;box-shadow:0 10px 35px #103b7308}
+.icon{width:54px;height:54px;border-radius:15px;background:var(--sky);display:grid;place-items:center;font-size:1.5rem;margin-bottom:18px}
+.feature h3,.event h3,.team-card h3{color:var(--navy);margin-bottom:8px}
+.feature p,.event p,.team-card p{color:var(--muted);font-size:.95rem}
+.soft{background:#f7fbff}
+.events{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.event-date{font-size:.8rem;color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.avatar{width:75px;height:75px;border-radius:22px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;display:grid;place-items:center;font-size:1.6rem;font-weight:900;margin-bottom:18px}
+.cta{margin:0 auto 88px;width:min(1120px,92%);border-radius:28px;padding:55px;background:linear-gradient(120deg,var(--navy),#1c73b7);color:#fff;text-align:center}
+.cta h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin-bottom:14px}
+.cta p{max-width:620px;margin:0 auto 25px;color:#e3effb}
+.cta .btn-primary{background:#fff;color:var(--navy)}
+footer{background:#0b2b52;color:#dbeaf8;padding:45px 0}
+.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+footer .logo{color:#fff}
+footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap;font-size:.9rem}
+.footer-links a:hover{color:#fff}
+@media(max-width:850px){nav{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:65px 0}.hero-art{min-height:320px}.features,.events,.team{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){h1{letter-spacing:-1px}.features,.events,.team{grid-template-columns:1fr}.section{padding:65px 0}.hero-art{min-height:290px}.art-title{font-size:2rem}.cta{padding:38px 24px;margin-bottom:65px}}
+
+.member-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.member-card{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 10px 35px #103b7308}.member-photo{height:245px;background:linear-gradient(135deg,#eef3f8,#dbe5f0);display:grid;place-items:center;color:#718096;position:relative}.member-photo:before{content:"ADD PHOTO";border:1px dashed #9aaabd;padding:12px 18px;border-radius:10px;font-size:.75rem;letter-spacing:1.5px;font-weight:800}.member-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.member-body{padding:23px}.member-body small{color:var(--blue);font-weight:800;letter-spacing:1px;text-transform:uppercase}.member-body h3{color:var(--navy);margin:8px 0 4px;font-size:1.3rem}.member-body p{color:var(--muted);margin-bottom:18px}.profile-modal{display:none;position:fixed;inset:0;background:#071a34c9;z-index:100;align-items:center;justify-content:center;padding:20px}.profile-modal.open{display:flex}.profile-box{width:min(680px,100%);background:#fff;border-radius:24px;padding:34px;position:relative;max-height:90vh;overflow:auto}.profile-box h2{color:var(--navy);margin-bottom:5px}.profile-box .role{color:var(--blue);font-weight:800;margin-bottom:18px}.profile-box p{color:var(--muted);white-space:pre-line}.profile-close{position:absolute;right:18px;top:12px;border:0;background:transparent;font-size:28px;cursor:pointer;color:var(--navy)}
+@media(max-width:850px){.member-grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.member-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="logo" href="#"><img src="univa-logo.png" alt="UNIVA logo" style="width:55px;height:55px;object-fit:contain"><span>UNIVA <small style="display:block;font-size:.55rem;letter-spacing:1.3px">YOUTH COUNCIL</small></span></a>
+<nav><a href="#about">About</a><a href="#departments">Departments</a><a href="#events">Events</a><a href="#team">Members' Panel</a><a class="btn btn-primary" href="https://forms.gle/dPi4fUcuQEHvVdu19" target="_blank">JOIN US ↗</a></nav>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="eyebrow">✦ A platform for tomorrow's leaders</div>
+<h1>Empowering Youth.<br><span style="color:var(--blue)">Inspiring Change.</span></h1>
+<p>UNIVA Youth Council brings students together to discover their potential, develop meaningful skills, and create a positive impact in their communities and beyond.</p>
+<div class="actions"><a class="btn btn-primary" href="https://forms.gle/dPi4fUcuQEHvVdu19" target="_blank">JOIN US ↗</a><a class="btn btn-outline" href="#about">Discover UNIVA ↓</a></div>
+</div>
+<div class="hero-art"><div class="art-content"><span class="art-tag">UNITED • INSPIRED • CONNECTED</span><div class="art-title">Your voice.<br>Your potential.<br>Your impact.</div><div class="art-bottom"><div><div style="font-weight:800">UNIVA Youth Council</div><div style="opacity:.75;font-size:.85rem">A growing global student network</div></div><div class="art-number">U<span style="font-size:1.5rem">+</span></div></div></div></div>
+</div>
+</section>
+<section class="section" id="about">
+<div class="container about-grid">
+<div class="about-card"><div class="eyebrow">✦ About our community</div><h3>Growing together,<br>leading together.</h3><p>We believe every student has the potential to make a difference when given the right platform, guidance, and opportunities.</p><div style="margin-top:28px;font-weight:900;color:var(--navy)">Learn. Lead. Create impact.</div></div>
+<div class="about-copy"><div class="eyebrow">WHO WE ARE</div><h2>A community built for young changemakers.</h2><p>UNIVA Youth Council is a student-centered platform dedicated to leadership development, collaboration, creativity, and meaningful youth engagement.</p><p>Through departments, activities, and projects, members can explore their interests, strengthen their abilities, and connect with students from different backgrounds.</p><a class="btn btn-primary" href="#departments">Explore what we do →</a></div>
+</div>
+</section>
+<section class="section soft" id="departments">
+<div class="container"><div class="section-head"><div class="eyebrow">✦ Our focus</div><h2>Opportunities to grow and contribute</h2><p>Discover spaces where your ideas, talents, and teamwork can create meaningful outcomes.</p></div>
+<div class="features">
+<div class="feature"><div class="icon">◈</div><h3>Leadership</h3><p>Build confidence, communication skills, and leadership experience through active participation.</p></div>
+<div class="feature"><div class="icon">✦</div><h3>Skill Development</h3><p>Explore your interests and develop practical skills through workshops, tasks, and projects.</p></div>
+<div class="feature"><div class="icon">◎</div><h3>Global Network</h3><p>Connect and collaborate with students from different schools, communities, and countries.</p></div>
+</div></div>
+</section>
+<section class="section" id="events">
+<div class="container"><div class="section-head"><div class="eyebrow">✦ Stay connected</div><h2>Activities & projects</h2><p>Keep an eye on this space for upcoming initiatives, events, and community updates.</p></div>
+<div class="events">
+<div class="event"><div class="event-date">Upcoming</div><h3>Leadership & teamwork</h3><p>Opportunities to participate in collaborative activities and build leadership experience.</p></div>
+<div class="event"><div class="event-date">Community</div><h3>Student-led projects</h3><p>Work with fellow members to plan and execute meaningful projects.</p></div>
+<div class="event"><div class="event-date">Updates</div><h3>UNIVA announcements</h3><p>News, member highlights, achievements, and important organizational updates.</p></div>
+</div></div>
+</section>
+<section class="section soft" id="team">
+<div class="container"><div class="section-head"><div class="eyebrow">✦ Leadership & community</div><h2>Members' Panel</h2><p>Explore the people working together to build the UNIVA Youth Council. Photos and detailed profiles can be added whenever you are ready.</p></div>
+<div class="member-grid" id="memberGrid"></div></div>
+</section>
+<section class="cta">
+<h2>Ready to discover your potential?</h2><p>Join UNIVA Youth Council and become part of a growing platform for students who want to learn, lead, and make an impact.</p><a class="btn btn-primary" href="https://forms.gle/dPi4fUcuQEHvVdu19" target="_blank">JOIN UNIVA TODAY ↗</a>
+</section>
+</main>
+<footer><div class="container footer-grid"><div><a class="logo" href="#"><span class="logo-mark">U</span><span>UNIVA YOUTH COUNCIL</span></a><p>Empowering youth. Inspiring change.</p></div><div class="footer-links"><a href="#about">About</a><a href="#departments">Departments</a><a href="#events">Events</a><a href="#team">Team</a><a href="https://forms.gle/dPi4fUcuQEHvVdu19" target="_blank">Join Us</a></div></div></footer>
+
+<div class="profile-modal" id="profileModal" role="dialog" aria-modal="true" aria-labelledby="profileName"><div class="profile-box"><button class="profile-close" id="profileClose" aria-label="Close">×</button><h2 id="profileName"></h2><div class="role" id="profileRole"></div><p id="profileDetails"></p></div></div>
+<script>
+const members=[
+{name:'Shahjaib Mohammed Hassan (Areeb)',role:'Founder & President',photo:'',details:'Founder of UNIVA Youth Council.
+
+Add biography, experience, achievements, responsibilities, education, projects, and other details here later.'},
+{name:'Member Name',role:'Vice President',photo:'',details:'Add this member's biography, experience, achievements, responsibilities, and other details here.'},
+{name:'Member Name',role:'Director of Management',photo:'',details:'Add this member's biography, experience, achievements, responsibilities, and other details here.'},
+{name:'Member Name',role:'Department Head',photo:'',details:'Add this member's biography, experience, achievements, responsibilities, and other details here.'},
+{name:'Member Name',role:'Deputy Department Head',photo:'',details:'Add this member's biography, experience, achievements, responsibilities, and other details here.'},
+{name:'Member Name',role:'Council Member',photo:'',details:'Add this member's biography, experience, achievements, responsibilities, and other details here.'}
+];
+const grid=document.getElementById('memberGrid');const modal=document.getElementById('profileModal');
+function renderMembers(){grid.innerHTML=members.map((m,i)=>`<article class="member-card"><div class="member-photo">${m.photo?`<img src="${m.photo}" alt="${m.name}">`:''}</div><div class="member-body"><small>UNIVA YOUTH COUNCIL</small><h3>${m.name}</h3><p>${m.role}</p><button class="btn btn-outline" onclick="showProfile(${i})">View Details ↗</button></div></article>`).join('')}
+function showProfile(i){const m=members[i];document.getElementById('profileName').textContent=m.name;document.getElementById('profileRole').textContent=m.role;document.getElementById('profileDetails').textContent=m.details;modal.classList.add('open')}
+function closeProfile(){modal.classList.remove('open')}
+document.getElementById('profileClose').addEventListener('click',closeProfile);modal.addEventListener('click',e=>{if(e.target===modal)closeProfile()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeProfile()});renderMembers();
+</script>
+</body>
+</html>
