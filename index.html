@@ -307,8 +307,24 @@ const members = [
       'I joined UNIVA Youth Council to discover my potential, strengthen my leadership and communication skills, and connect with like-minded young people.',
       "I am dedicated to contributing to UNIVA's events, projects, and initiatives while working with the team to create meaningful opportunities for youth, support community development, and help build a platform where young people can grow and succeed."
     ].join('\n\n')
-  }
-];
+  },
+
+    {
+    name: 'Farhan Mahamud',
+    role: 'Department Head, Programs & Events Department',
+    photo: 'farhan-mahamud.png',
+    details: [
+      'Having spent years competing at national platforms, participating in 17 competitions and securing 8 championships alongside 3 runner-up titles, I have experienced firsthand the transformative power of academic challenges and leadership opportunities.',
+
+      'My journey as a National Olympiad achiever, combined with three consecutive years of student leadership as a School Prefect, Central Discipline Prefect, and House Prefect, has shaped my passion for mentoring others and building structured, highly disciplined environments.',
+
+      'As the Department Head of Programs & Events, my vision for UNIVA Youth Council is to build a vibrant platform where students do not just participate in events, but discover their true potential.',
+
+      'I am dedicated to designing national and international-level Olympiads, hands-on workshops, and skill-building bootcamps that directly empower young minds.',
+
+      'By providing guidance in project creation, problem-solving, and competitive training, my goal is to lead an active, impactful department that elevates youth talent across the nation and drives real, positive change.'
+    ].join('\n\n')
+    }
 
 const grid = document.getElementById('memberGrid');
 const modal = document.getElementById('profileModal');
@@ -330,7 +346,8 @@ function renderMembers() {
       </div>
     </article>
   `).join('');
-}
+  }
+];
 
 function showProfile(index) {
   const member = members[index];
