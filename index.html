@@ -245,59 +245,78 @@ footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
 </section>
 
 <section class="section" id="international-alliances">
+
   <div class="container">
+
     <div class="section-head">
+
       <div class="eyebrow">✦ International Alliances</div>
+
       <h2>Canada Country Chapter</h2>
+
       <p>
         Meet the representative leading UNIVA Youth Council's
         international presence in Canada.
       </p>
-    </div>
-
-<div class="member-grid">
-
-  <article class="member-card">
-
-    <div class="member-photo">
-      <img src="ahnaf-juhair-haq.png" alt="Ahnaf Juhair Haq">
-    </div>
-
-    <div class="member-body">
-
-      <small>CANADA COUNTRY CHAPTER</small>
-
-      <h3>Ahnaf Juhair Haq</h3>
-
-      <p style="color:var(--blue);font-weight:800;margin-bottom:18px;">
-        Country Director – Canada<br>
-        Advisor, Youth Development Department
-      </p>
-
-      <p>
-        I am passionate about empowering young people, creating impactful
-        social awareness, and driving meaningful youth development programs.
-        Through my experiences in peer mentorship, community tutoring, and
-        volunteering initiatives—from environmental projects to health
-        awareness campaigns—I have seen the power of community-driven action
-        firsthand.
-      </p>
-
-      <p>
-        As the Country Director for Canada and Advisor for Youth Development
-        at UNIVA Youth Council, my mission is to provide strategic guidance,
-        lead our national team, bridge international youth networks, empower
-        students with essential mentorship, and organize forward-thinking
-        initiatives that inspire positive change locally and globally.
-      </p>
 
     </div>
 
-  </article>
+    <div class="member-grid">
 
-</div>
+      <article class="member-card">
+
+        <div class="member-photo">
+          <img
+            src="ahnaf-juhair-haq.png"
+            alt="Ahnaf Juhair Haq"
+          >
+        </div>
+
+        <div class="member-body">
+
+          <small>CANADA COUNTRY CHAPTER</small>
+
+          <h3>Ahnaf Juhair Haq</h3>
+
+          <p style="color:var(--blue);font-weight:800;margin-bottom:18px;">
+            Country Director – Canada<br>
+            Advisor, Youth Development Department
+          </p>
+
+          <button
+            class="btn btn-outline"
+            onclick="showAhnafProfile()"
+          >
+            View Details ↗
+          </button>
+
+        </div>
+
+      </article>
+
+    </div>
+
   </div>
+
 </section>
+
+<script>
+function showAhnafProfile() {
+
+  document.getElementById('profileName').textContent =
+    'Ahnaf Juhair Haq';
+
+  document.getElementById('profileRole').textContent =
+    'Country Director – Canada | Advisor, Youth Development Department';
+
+  document.getElementById('profileDetails').textContent =
+`I am passionate about empowering young people, creating impactful social awareness, and driving meaningful youth development programs. Through my experiences in peer mentorship, community tutoring, and volunteering initiatives—from environmental projects to health awareness campaigns—I have seen the power of community-driven action firsthand.
+
+As the Country Director for Canada and Advisor for Youth Development at UNIVA Youth Council, my mission is to provide strategic guidance, lead our national team, bridge international youth networks, empower students with essential mentorship, and organize forward-thinking initiatives that inspire positive change locally and globally.`;
+
+  document.getElementById('profileModal').classList.add('open');
+}
+</script>
 
 <section class="cta">
 <h2>Ready to discover your potential?</h2><p>Join UNIVA Youth Council and become part of a growing platform for students who want to learn, lead, and make an impact.</p><a class="btn btn-primary" href="https://forms.gle/dPi4fUcuQEHvVdu19" target="_blank">JOIN UNIVA TODAY ↗</a>
