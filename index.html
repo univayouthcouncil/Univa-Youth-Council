@@ -1,544 +1,2406 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="google-site-verification" content="LyWfjVloGvNJzxZQnDcOo4kXyGsuwcwV3N8npvmxy78" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UNIVA Youth Council | Empowering Youth. Inspiring Change.</title>
-<meta name="description" content="UNIVA Youth Council is a global platform where students discover their potential, develop skills, and create meaningful impact.">
-<link rel="icon" type="image/png" href="univa-logo.png">
-<link rel="apple-touch-icon" href="univa-logo.png">
-/* =========================================
-   UNIVA OVERVIEW SECTIONS
-   ========================================= */
-
-.univa-intro {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.univa-intro p {
-  color: var(--muted);
-  line-height: 1.9;
-  font-size: 17px;
-  margin-bottom: 18px;
-}
-
-.univa-highlight {
-  margin: 35px auto 0;
-  padding: 25px;
-  border-radius: 18px;
-  background: linear-gradient(
-    135deg,
-    rgba(31, 91, 160, 0.08),
-    rgba(31, 91, 160, 0.03)
-  );
-  border: 1px solid rgba(31, 91, 160, 0.15);
-  color: var(--blue);
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: .5px;
-}
-
-.univa-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin-top: 40px;
-}
-
-.univa-card {
-  padding: 28px;
-  border-radius: 18px;
-  background: #fff;
-  border: 1px solid rgba(20, 50, 90, 0.10);
-  box-shadow: 0 10px 30px rgba(20, 50, 90, 0.06);
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.univa-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 16px 40px rgba(20, 50, 90, 0.10);
-}
-
-.univa-card-number {
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--blue);
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-}
-
-.univa-card h3 {
-  margin-bottom: 12px;
-}
-
-.univa-card p {
-  color: var(--muted);
-  line-height: 1.75;
-  margin: 0;
-}
-
-.univa-feature-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
-  margin-top: 40px;
-}
-
-.univa-feature {
-  padding: 30px;
-  border-radius: 20px;
-  background: #fff;
-  border: 1px solid rgba(20, 50, 90, 0.10);
-  box-shadow: 0 10px 30px rgba(20, 50, 90, 0.05);
-}
-
-.univa-feature h3 {
-  margin-bottom: 12px;
-}
-
-.univa-feature p {
-  color: var(--muted);
-  line-height: 1.8;
-}
-
-.univa-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.univa-tag {
-  padding: 9px 14px;
-  border-radius: 999px;
-  background: rgba(31, 91, 160, 0.08);
-  color: var(--blue);
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.univa-pathway {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
-  margin-top: 45px;
-}
-
-.univa-step {
-  text-align: center;
-  position: relative;
-}
-
-.univa-step-number {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto 12px;
-  border-radius: 50%;
-  background: var(--blue);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-}
-
-.univa-step h4 {
-  font-size: 14px;
-  margin: 0;
-}
-
-.univa-step:not(:last-child)::after {
-  content: "→";
-  position: absolute;
-  right: -12px;
-  top: 13px;
-  color: var(--blue);
-  font-weight: 800;
-}
-
-.univa-quote {
-  margin-top: 35px;
-  padding: 30px;
-  border-left: 4px solid var(--blue);
-  background: rgba(31, 91, 160, 0.05);
-  border-radius: 0 16px 16px 0;
-  font-size: 21px;
-  line-height: 1.6;
-  font-weight: 700;
-}
-
-.univa-vision-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  margin-top: 40px;
-}
-
-.univa-vision-box {
-  padding: 35px;
-  border-radius: 22px;
-  background: #fff;
-  border: 1px solid rgba(20, 50, 90, 0.10);
-  box-shadow: 0 12px 35px rgba(20, 50, 90, 0.06);
-}
-
-.univa-vision-box h3 {
-  color: var(--blue);
-  margin-bottom: 15px;
-}
-
-.univa-vision-box p {
-  color: var(--muted);
-  line-height: 1.85;
-  margin: 0;
-}
-
-.univa-principles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 40px;
-}
-
-.univa-principle {
-  padding: 25px;
-  border-radius: 18px;
-  background: #fff;
-  border: 1px solid rgba(20, 50, 90, 0.09);
-}
-
-.univa-principle h3 {
-  color: var(--blue);
-  margin-bottom: 10px;
-}
-
-.univa-principle p {
-  color: var(--muted);
-  line-height: 1.7;
-  margin: 0;
-}
-
-.univa-ecosystem {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-  margin-top: 40px;
-}
-
-.univa-ecosystem-item {
-  padding: 25px;
-  text-align: center;
-  border-radius: 18px;
-  background: #fff;
-  border: 1px solid rgba(20, 50, 90, 0.09);
-}
-
-.univa-ecosystem-item h3 {
-  color: var(--blue);
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.univa-ecosystem-item p {
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 0;
-}
-
-@media (max-width: 900px) {
-  .univa-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .univa-feature-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .univa-pathway {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
-
-  .univa-step:not(:last-child)::after {
-    display: none;
-  }
-
-  .univa-vision-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .univa-principles {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .univa-ecosystem {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .univa-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .univa-principles {
-    grid-template-columns: 1fr;
-  }
-
-  .univa-ecosystem {
-    grid-template-columns: 1fr;
-  }
-
-  .univa-intro p {
-    font-size: 16px;
-  }
-
-  .univa-highlight {
-    font-size: 17px;
-  }
-
-  .univa-quote {
-  font-size: 18px;
-}
-
-:root{--navy:#103b73;--blue:#247fca;--sky:#eaf5ff;--ink:#14253d;--muted:#607089;--white:#fff;--line:#e5edf5}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
-a{text-decoration:none;color:inherit}
-.container{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.8px;color:var(--navy);font-size:1.2rem}
-.logo-mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;display:grid;place-items:center;font-weight:900}
-nav{display:flex;align-items:center;gap:25px;font-size:.95rem;font-weight:600}
-nav a:hover{color:var(--blue)}
-.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 23px;font-weight:800;border:1px solid transparent;transition:.2s;cursor:pointer}
-.btn-primary{background:var(--blue);color:#fff;box-shadow:0 8px 20px #247fca30}
-.btn-primary:hover{transform:translateY(-2px);background:var(--navy)}
-.btn-outline{border-color:#cbdbea;color:var(--navy);background:#fff}
-.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
-.hero{background:linear-gradient(120deg,#f3f9ff 0%,#fff 55%,#e9f5ff 100%);padding:95px 0 85px;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px}
-.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:.78rem;margin-bottom:18px}
-h1{font-size:clamp(2.5rem,5vw,4.7rem);line-height:1.08;letter-spacing:-2px;color:var(--navy);margin-bottom:22px}
-.hero p{font-size:1.08rem;color:var(--muted);max-width:590px;margin-bottom:30px}
-.actions{display:flex;gap:12px;flex-wrap:wrap}
-.hero-art{min-height:390px;border-radius:32px;background:linear-gradient(145deg,var(--navy),#1f77bb);position:relative;overflow:hidden;padding:30px;color:#fff;box-shadow:0 25px 65px #103b7330}
-.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #ffffff40;border-radius:50%}
-.hero-art:before{width:360px;height:360px;right:-170px;top:-100px}
-.hero-art:after{width:280px;height:280px;left:-160px;bottom:-140px}
-.art-content{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:space-between}
-.art-tag{background:#ffffff22;border:1px solid #ffffff45;border-radius:999px;padding:7px 12px;font-size:.78rem;width:max-content}
-.art-title{font-size:2.5rem;line-height:1.1;font-weight:900;max-width:350px}
-.art-bottom{display:flex;justify-content:space-between;align-items:end;gap:15px}
-.art-number{font-size:4rem;font-weight:900;line-height:1}
-.section{padding:88px 0}
-.section-head{text-align:center;max-width:700px;margin:0 auto 42px}
-.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;color:var(--navy);margin-bottom:13px}
-.section-head p{color:var(--muted)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.about-card{background:var(--sky);border-radius:25px;padding:35px;position:relative}
-.about-card h3{font-size:2rem;color:var(--navy);line-height:1.2;margin:20px 0 10px}
-.about-card p,.about-copy p{color:var(--muted)}
-.about-copy h2{font-size:2.5rem;color:var(--navy);line-height:1.15;margin-bottom:18px}
-.about-copy p{margin-bottom:20px}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.feature,.event,.team-card{border:1px solid var(--line);border-radius:20px;padding:26px;background:#fff;box-shadow:0 10px 35px #103b7308}
-.icon{width:54px;height:54px;border-radius:15px;background:var(--sky);display:grid;place-items:center;font-size:1.5rem;margin-bottom:18px}
-.feature h3,.event h3,.team-card h3{color:var(--navy);margin-bottom:8px}
-.feature p,.event p,.team-card p{color:var(--muted);font-size:.95rem}
-.soft{background:#f7fbff}
-.events{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.event-date{font-size:.8rem;color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
-.team{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.avatar{width:75px;height:75px;border-radius:22px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;display:grid;place-items:center;font-size:1.6rem;font-weight:900;margin-bottom:18px}
-.cta{margin:0 auto 88px;width:min(1120px,92%);border-radius:28px;padding:55px;background:linear-gradient(120deg,var(--navy),#1c73b7);color:#fff;text-align:center}
-.cta h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin-bottom:14px}
-.cta p{max-width:620px;margin:0 auto 25px;color:#e3effb}
-.cta .btn-primary{background:#fff;color:var(--navy)}
-footer{background:#0b2b52;color:#dbeaf8;padding:45px 0}
-.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
-footer .logo{color:#fff}
-footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
-.footer-links{display:flex;gap:20px;flex-wrap:wrap;font-size:.9rem}
-.footer-links a:hover{color:#fff}
-@media(max-width:850px){nav{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:65px 0}.hero-art{min-height:320px}.features,.events,.team{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){h1{letter-spacing:-1px}.features,.events,.team{grid-template-columns:1fr}.section{padding:65px 0}.hero-art{min-height:290px}.art-title{font-size:2rem}.cta{padding:38px 24px;margin-bottom:65px}}
-
-/* Members' Panel */
-.member-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.member-card {
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 10px 35px #103b7308;
-}
-
-.member-photo {
-  width: 100%;
-  background: linear-gradient(135deg, #eef3f8, #dbe5f0);
-  display: block;
-  position: relative;
-  overflow: hidden;
-  line-height: 0;
-}
-
-/* Display the complete uploaded image */
-.member-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* Member information */
-.member-body {
-  padding: 23px;
-  background: #fff;
-}
-
-.member-body small {
-  display: block;
-  color: var(--blue);
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.member-body h3 {
-  color: var(--navy);
-  margin: 8px 0 4px;
-  font-size: 1.3rem;
-  line-height: 1.4;
-}
-
-.member-body p {
-  color: var(--muted);
-  margin-bottom: 18px;
-}
-
-.profile-modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: #071a34c9;
-  z-index: 100;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.profile-modal.open {
-  display: flex;
-}
-
-.profile-box {
-  width: min(680px, 100%);
-  background: #fff;
-  border-radius: 24px;
-  padding: 34px;
-  position: relative;
-  max-height: 90vh;
-  overflow: auto;
-}
-
-.profile-box h2 {
-  color: var(--navy);
-  margin-bottom: 5px;
-}
-
-.profile-box .role {
-  color: var(--blue);
-  font-weight: 800;
-  margin-bottom: 18px;
-}
-
-.profile-box p {
-  color: var(--muted);
-  white-space: pre-line;
-}
-
-.profile-close {
-  position: absolute;
-  right: 18px;
-  top: 12px;
-  border: 0;
-  background: transparent;
-  font-size: 28px;
-  cursor: pointer;
-  color: var(--navy);
-}
-
-/* Responsive layout */
-@media (max-width: 850px) {
-  .member-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 560px) {
-  .member-grid {
-    grid-template-columns: 1fr;
-  }
-}
-@media(max-width:850px){.member-grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.member-grid{grid-template-columns:1fr}}
-</style>
+
+<head>
+  <meta name="google-site-verification" content="LyWfjVloGvNJzxZQnDcOo4kXyGsuwcwV3N8npvmxy78">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>UNIVA Youth Council | Empowering Youth. Inspiring Change.</title>
+
+  <meta
+    name="description"
+    content="UNIVA Youth Council is a global youth platform where young people discover their potential, develop skills, collaborate, research, lead, teach, compete, and turn ideas into action."
+  >
+
+  <link rel="icon" type="image/png" href="univa-logo.png">
+  <link rel="apple-touch-icon" href="univa-logo.png">
+
+  <style>
+
+    :root {
+      --navy: #103b73;
+      --blue: #247fca;
+      --sky: #eaf5ff;
+      --ink: #14253d;
+      --muted: #607089;
+      --white: #ffffff;
+      --line: #e5edf5;
+      --soft: #f7fbff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      color: var(--navy);
+      letter-spacing: .6px;
+    }
+
+    .logo img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+    }
+
+    .logo small {
+      display: block;
+      font-size: .53rem;
+      letter-spacing: 1.4px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: .9rem;
+      font-weight: 750;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    /* BUTTONS */
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 20px;
+      border-radius: 999px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: .2s ease;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: white;
+      box-shadow: 0 8px 22px rgba(36,127,202,.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--navy);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: white;
+      color: var(--navy);
+      border-color: #cad9e8;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 95px 0 85px;
+      background:
+        radial-gradient(circle at 90% 10%, #dff1ff 0, transparent 35%),
+        linear-gradient(120deg, #f4faff, #fff 55%, #eaf6ff);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--blue);
+      font-size: .77rem;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: var(--navy);
+      font-size: clamp(2.6rem, 5vw, 4.7rem);
+      line-height: 1.06;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 630px;
+      font-size: 1.08rem;
+      margin-bottom: 28px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero-art {
+      min-height: 410px;
+      border-radius: 32px;
+      padding: 30px;
+      color: white;
+      background: linear-gradient(145deg, var(--navy), #247fca);
+      box-shadow: 0 25px 65px rgba(16,59,115,.22);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-art::before,
+    .hero-art::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 50%;
+    }
+
+    .hero-art::before {
+      width: 390px;
+      height: 390px;
+      right: -190px;
+      top: -120px;
+    }
+
+    .hero-art::after {
+      width: 290px;
+      height: 290px;
+      left: -170px;
+      bottom: -150px;
+    }
+
+    .art-content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .art-tag {
+      width: max-content;
+      padding: 7px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.3);
+      background: rgba(255,255,255,.1);
+      font-size: .76rem;
+      font-weight: 700;
+    }
+
+    .art-title {
+      font-size: 2.7rem;
+      font-weight: 900;
+      line-height: 1.08;
+      max-width: 390px;
+    }
+
+    .art-bottom {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    .art-number {
+      font-size: 4.5rem;
+      font-weight: 900;
+      line-height: .8;
+    }
+
+    /* GENERAL */
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .soft {
+      background: var(--soft);
+    }
+
+    .section-head {
+      max-width: 800px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    .section-head h2 {
+      color: var(--navy);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+    }
+
+    .text-wrap {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .text-wrap p {
+      color: var(--muted);
+      margin-bottom: 19px;
+      line-height: 1.9;
+    }
+
+    .text-wrap p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-card {
+      background: var(--sky);
+      border-radius: 25px;
+      padding: 35px;
+    }
+
+    .about-card h3 {
+      color: var(--navy);
+      font-size: 2rem;
+      line-height: 1.2;
+      margin: 18px 0 10px;
+    }
+
+    .about-card p {
+      color: var(--muted);
+    }
+
+    .about-copy h2 {
+      color: var(--navy);
+      font-size: 2.5rem;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    /* HIGHLIGHT */
+
+    .highlight {
+      margin-top: 35px;
+      padding: 25px;
+      border-radius: 18px;
+      background: rgba(36,127,202,.06);
+      border: 1px solid rgba(36,127,202,.14);
+      color: var(--blue);
+      text-align: center;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    /* MEMBER ACTIVITIES */
+
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .activity-card {
+      background: white;
+      padding: 27px;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 30px rgba(16,59,115,.06);
+      transition: .25s ease;
+    }
+
+    .activity-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 40px rgba(16,59,115,.1);
+    }
+
+    .activity-number {
+      color: var(--blue);
+      font-size: .76rem;
+      font-weight: 850;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .activity-card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .activity-card p {
+      color: var(--muted);
+      font-size: .93rem;
+    }
+
+    /* SKILLS */
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .skill-item {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 20px;
+      color: var(--navy);
+      font-weight: 750;
+      box-shadow: 0 7px 22px rgba(16,59,115,.04);
+    }
+
+    .skill-item span {
+      color: var(--blue);
+      margin-right: 7px;
+    }
+
+    /* FEATURES */
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .feature {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 27px;
+      box-shadow: 0 10px 30px rgba(16,59,115,.05);
+    }
+
+    .icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: var(--sky);
+      font-size: 1.5rem;
+      margin-bottom: 17px;
+    }
+
+    .feature h3 {
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    /* CYCLE */
+
+    .cycle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 35px;
+    }
+
+    .cycle-item {
+      background: var(--sky);
+      color: var(--navy);
+      border-radius: 999px;
+      padding: 14px 19px;
+      font-weight: 850;
+    }
+
+    .cycle-arrow {
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    /* PROJECTS */
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 35px;
+    }
+
+    .project-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(16,59,115,.04);
+    }
+
+    .project-card h3 {
+      color: var(--navy);
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .project-card p {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    /* PATHWAY */
+
+    .pathway {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .path-step {
+      padding: 14px 17px;
+      background: white;
+      border: 1px solid #dce9f5;
+      color: var(--navy);
+      border-radius: 14px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .path-arrow {
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    /* VISION */
+
+    .vision-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .vision-box {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 35px;
+      box-shadow: 0 12px 35px rgba(16,59,115,.05);
+    }
+
+    .vision-box h3 {
+      color: var(--blue);
+      margin-bottom: 14px;
+    }
+
+    .vision-box p {
+      color: var(--muted);
+      line-height: 1.85;
+    }
+
+    /* PRINCIPLES */
+
+    .principle-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .principle {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 25px;
+    }
+
+    .principle h3 {
+      color: var(--blue);
+      margin-bottom: 9px;
+    }
+
+    .principle p {
+      color: var(--muted);
+      font-size: .93rem;
+      line-height: 1.7;
+    }
+
+    /* TAGS */
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .tag {
+      padding: 9px 14px;
+      background: rgba(36,127,202,.07);
+      color: var(--blue);
+      border-radius: 999px;
+      font-size: .84rem;
+      font-weight: 750;
+    }
+
+    /* EVENTS */
+
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .event {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 27px;
+    }
+
+    .event-label {
+      color: var(--blue);
+      font-size: .75rem;
+      font-weight: 850;
+      letter-spacing: 1px;
+      margin-bottom: 9px;
+    }
+
+    .event h3 {
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .event p {
+      color: var(--muted);
+      font-size: .93rem;
+    }
+
+    /* MEMBERS */
+
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .member-card {
+      overflow: hidden;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 10px 35px rgba(16,59,115,.06);
+    }
+
+    .member-photo {
+      background: linear-gradient(135deg,#edf3f8,#dce7f2);
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .member-photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .member-body {
+      padding: 23px;
+    }
+
+    .member-body small {
+      color: var(--blue);
+      font-size: .7rem;
+      font-weight: 850;
+      letter-spacing: 1px;
+    }
+
+    .member-body h3 {
+      color: var(--navy);
+      font-size: 1.2rem;
+      line-height: 1.35;
+      margin: 7px 0 5px;
+    }
+
+    .member-body p {
+      color: var(--muted);
+      font-size: .92rem;
+      margin-bottom: 17px;
+    }
+
+    /* MODAL */
+
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(5,22,45,.78);
+    }
+
+    .modal.open {
+      display: flex;
+    }
+
+    .modal-box {
+      width: min(730px,100%);
+      max-height: 90vh;
+      overflow-y: auto;
+      background: white;
+      border-radius: 25px;
+      padding: 35px;
+      position: relative;
+      box-shadow: 0 30px 80px rgba(0,0,0,.25);
+    }
+
+    .modal-close {
+      position: absolute;
+      right: 18px;
+      top: 12px;
+      border: none;
+      background: transparent;
+      color: var(--navy);
+      font-size: 29px;
+      cursor: pointer;
+    }
+
+    .modal-box h2 {
+      color: var(--navy);
+      line-height: 1.3;
+      padding-right: 30px;
+    }
+
+    .modal-role {
+      color: var(--blue);
+      font-weight: 800;
+      margin: 5px 0 20px;
+    }
+
+    .modal-details {
+      color: var(--muted);
+      white-space: pre-line;
+      line-height: 1.85;
+    }
+
+    /* CTA */
+
+    .cta {
+      width: min(1120px,92%);
+      margin: 0 auto 85px;
+      padding: 60px 40px;
+      border-radius: 30px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(120deg,var(--navy),#1c73b7);
+    }
+
+    .cta h2 {
+      font-size: clamp(2rem,4vw,3rem);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #e1eef9;
+    }
+
+    .cta .btn-primary {
+      background: white;
+      color: var(--navy);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #0b2b52;
+      color: #dbeaf8;
+      padding: 45px 0;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    footer .logo {
+      color: white;
+    }
+
+    footer p {
+      color: #aac4dd;
+      font-size: .9rem;
+      margin-top: 10px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: .9rem;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1000px) {
+
+      nav {
+        gap: 10px;
+        font-size: .8rem;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-art {
+        min-height: 340px;
+      }
+
+      .activity-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .member-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .features {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .project-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .principle-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .skill-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .event-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      .section {
+        padding: 65px 0;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .about-grid,
+      .vision-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .activity-grid,
+      .features,
+      .project-grid,
+      .principle-grid,
+      .skill-grid,
+      .event-grid,
+      .member-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .hero-art {
+        min-height: 290px;
+      }
+
+      .art-content {
+        min-height: 230px;
+      }
+
+      .art-title {
+        font-size: 2rem;
+      }
+
+      .pathway {
+        justify-content: flex-start;
+      }
+
+      .path-arrow {
+        display: none;
+      }
+
+      .cta {
+        padding: 42px 23px;
+        margin-bottom: 65px;
+      }
+
+      .modal-box {
+        padding: 28px 22px;
+      }
+    }
+
+  </style>
 </head>
+
+
 <body>
+
+
+<!-- ======================================================
+     HEADER
+====================================================== -->
+
 <header>
-<div class="container nav">
-<a class="logo" href="#"><img src="univa-logo.png" alt="UNIVA logo" style="width:55px;height:55px;object-fit:contain"><span>UNIVA <small style="display:block;font-size:.55rem;letter-spacing:1.3px">YOUTH COUNCIL</small></span></a>
-<nav><a href="#about">About</a><a href="#departments">Departments</a><a href="#events">Events</a><a href="#team">Members' Panel</a><a class="btn btn-primary" href="https://forms.gle/dPi4fUcuQEHvVdu19" target="_blank">JOIN US ↗</a></nav>
-</div>
+
+  <div class="container nav">
+
+    <a href="#" class="logo">
+
+      <img src="univa-logo.png" alt="UNIVA Youth Council logo">
+
+      <span>
+        UNIVA
+        <small>YOUTH COUNCIL</small>
+      </span>
+
+    </a>
+
+    <nav>
+
+      <a href="#about">About</a>
+      <a href="#purpose">Purpose</a>
+      <a href="#members-do">Members</a>
+      <a href="#departments">Departments</a>
+      <a href="#events">Activities</a>
+      <a href="#team">Members' Panel</a>
+
+      <a
+        href="https://forms.gle/dPi4fUcuQEHvVdu19"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-primary"
+      >
+        JOIN US ↗
+      </a>
+
+    </nav>
+
+  </div>
+
 </header>
+
+
 <main>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
 <section class="hero">
-<div class="container hero-grid">
-<div>
-<div class="eyebrow">✦ A platform for tomorrow's leaders</div>
-<h1>Empowering Youth.<br><span style="color:var(--blue)">Inspiring Change.</span></h1>
-<p>UNIVA Youth Council brings students together to discover their potential, develop meaningful skills, and create a positive impact in their communities and beyond.</p>
-<div class="actions"><a class="btn btn-primary" href="https://forms.gle/dPi4fUcuQEHvVdu19" target="_blank">JOIN US ↗</a><a class="btn btn-outline" href="#about">Discover UNIVA ↓</a></div>
-</div>
-<div class="hero-art"><div class="art-content"><span class="art-tag">UNITED • INSPIRED • CONNECTED</span><div class="art-title">Your voice.<br>Your potential.<br>Your impact.</div><div class="art-bottom"><div><div style="font-weight:800">UNIVA Youth Council</div><div style="opacity:.75;font-size:.85rem">A growing global student network</div></div><div class="art-number">U<span style="font-size:1.5rem">+</span></div></div></div></div>
-</div>
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        ✦ A Platform for Tomorrow's Leaders
+      </div>
+
+      <h1>
+        Empowering Youth.
+        <br>
+        <span style="color:var(--blue)">
+          Inspiring Change.
+        </span>
+      </h1>
+
+      <p>
+        UNIVA Youth Council is a global youth platform where young
+        people discover their potential, develop future-ready skills,
+        collaborate, research, lead, teach, compete, and turn ideas
+        into action.
+      </p>
+
+      <div class="actions">
+
+        <a
+          href="https://forms.gle/dPi4fUcuQEHvVdu19"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary"
+        >
+          JOIN UNIVA ↗
+        </a>
+
+        <a href="#about" class="btn btn-outline">
+          Discover UNIVA ↓
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-art">
+
+      <div class="art-content">
+
+        <span class="art-tag">
+          UNITED • INSPIRED • CONNECTED
+        </span>
+
+        <div class="art-title">
+          Your voice.
+          <br>
+          Your potential.
+          <br>
+          Your impact.
+        </div>
+
+        <div class="art-bottom">
+
+          <div>
+
+            <strong>
+              UNIVA Youth Council
+            </strong>
+
+            <div style="opacity:.75;font-size:.85rem">
+              A growing global student network
+            </div>
+
+          </div>
+
+          <div class="art-number">
+            U<span style="font-size:1.5rem">+</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
+
+
+<!-- ======================================================
+     ABOUT
+====================================================== -->
+
 <section class="section" id="about">
-<div class="container about-grid">
-<div class="about-card"><div class="eyebrow">✦ About our community</div><h3>Growing together,<br>leading together.</h3><p>We believe every student has the potential to make a difference when given the right platform, guidance, and opportunities.</p><div style="margin-top:28px;font-weight:900;color:var(--navy)">Learn. Lead. Create impact.</div></div>
-<div class="about-copy"><div class="eyebrow">WHO WE ARE</div><h2>A community built for young changemakers.</h2><p>UNIVA Youth Council is a student-centered platform dedicated to leadership development, collaboration, creativity, and meaningful youth engagement.</p><p>Through departments, activities, and projects, members can explore their interests, strengthen their abilities, and connect with students from different backgrounds.</p><a class="btn btn-primary" href="#departments">Explore what we do →</a></div>
-</div>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ What is UNIVA?
+      </div>
+
+      <h2>
+        United Network of Innovative Visionaries & Achievers
+      </h2>
+
+      <p>
+        A youth-led organization bringing talented, passionate,
+        innovative, and ambitious young people together.
+      </p>
+
+    </div>
+
+    <div class="text-wrap">
+
+      <p>
+        UNIVA Youth Council is a youth-led organization with the
+        vision of bringing together talented, passionate, innovative,
+        and ambitious young people from diverse backgrounds,
+        disciplines, communities, and countries under one united platform.
+      </p>
+
+      <p>
+        UNIVA was created with a simple belief: every young person
+        has potential, but potential grows when it is given the right
+        environment, guidance, opportunities, and platform.
+      </p>
+
+      <p>
+        Our purpose is to discover that potential, nurture it, and
+        help young people turn their interests, ideas, skills, and
+        ambitions into meaningful action.
+      </p>
+
+      <p>
+        UNIVA aims to build an international community where young
+        people can connect, learn, collaborate, create, lead,
+        research, compete, teach, and grow together.
+      </p>
+
+    </div>
+
+    <div class="highlight">
+      Discover your potential. Develop your abilities.
+      Turn your ideas into action.
+    </div>
+
+  </div>
+
 </section>
+
+
+<!-- ======================================================
+     PURPOSE
+====================================================== -->
+
+<section class="section soft" id="purpose">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ Our Purpose
+      </div>
+
+      <h2>
+        Different interests. One united platform.
+      </h2>
+
+    </div>
+
+    <div class="text-wrap">
+
+      <p>
+        Young people have different talents, interests, academic
+        backgrounds, skills, and aspirations. UNIVA seeks to bring
+        these individuals together and create a community where
+        those differences become opportunities for collaboration.
+      </p>
+
+      <p>
+        Rather than creating a community where everyone follows the
+        same path, UNIVA aims to understand the individual interests
+        and potential of its members and connect them with people
+        working in similar areas.
+      </p>
+
+      <p>
+        Members may be connected according to their academic interests,
+        fields of study, talents, skills, career interests, creative
+        abilities, and areas of passion.
+      </p>
+
+      <p>
+        For example, students interested in science may have
+        opportunities to work together on research-based projects,
+        while students interested in business may collaborate on
+        entrepreneurship and business projects. Students interested
+        in technology may work on technology-based initiatives, while
+        those interested in writing, media, arts, public speaking,
+        leadership, or social initiatives can develop and showcase
+        their abilities through relevant activities.
+      </p>
+
+      <p>
+        Our goal is to transform a large international student
+        community into smaller, meaningful networks where members
+        can learn from people who share their interests while also
+        being exposed to perspectives from different backgrounds
+        and countries.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     WHAT MEMBERS DO
+====================================================== -->
+
+<section class="section" id="members-do">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ What Do Members Actually Do?
+      </div>
+
+      <h2>
+        Membership is about participation, not just a title.
+      </h2>
+
+      <p>
+        Members can explore their interests, work with others,
+        develop practical skills, and turn ideas into real projects
+        and experiences.
+      </p>
+
+    </div>
+
+
+    <div class="activity-grid">
+
+      <div class="activity-card">
+        <div class="activity-number">01 · LEARN</div>
+        <h3>Explore</h3>
+        <p>
+          Explore subjects, interests, careers, ideas, and fields
+          beyond your regular classroom experience.
+        </p>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-number">02 · DEVELOP</div>
+        <h3>Build Skills</h3>
+        <p>
+          Develop communication, leadership, research, technology,
+          creative, organizational, and teamwork skills.
+        </p>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-number">03 · CONNECT</div>
+        <h3>Join Teams</h3>
+        <p>
+          Connect with members who share your academic interests,
+          talents, ambitions, and areas of passion.
+        </p>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-number">04 · RESEARCH</div>
+        <h3>Investigate</h3>
+        <p>
+          Explore questions, conduct research, analyze information,
+          and work on research-based ideas.
+        </p>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-number">05 · CREATE</div>
+        <h3>Build Projects</h3>
+        <p>
+          Turn ideas into projects, initiatives, presentations,
+          publications, solutions, and practical work.
+        </p>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-number">06 · LEAD</div>
+        <h3>Take Initiative</h3>
+        <p>
+          Take responsibility, organize activities, lead teams,
+          and create opportunities for other young people.
+        </p>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-number">07 · TEACH</div>
+        <h3>Share Knowledge</h3>
+        <p>
+          Teach, mentor, conduct peer-learning sessions, and create
+          educational content for other students.
+        </p>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-number">08 · COMPETE</div>
+        <h3>Challenge Yourself</h3>
+        <p>
+          Participate in Olympiads, competitions, challenges,
+          showcases, and knowledge-based activities.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="highlight">
+      Learn → Develop → Collaborate → Create → Lead → Share → Compete → Grow
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     LEARNING BEYOND CLASSROOM
+====================================================== -->
+
+<section class="section soft">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ Learning Beyond the Classroom
+      </div>
+
+      <h2>
+        Make learning practical, collaborative, and meaningful.
+      </h2>
+
+    </div>
+
+    <div class="text-wrap">
+
+      <p>
+        UNIVA believes that learning should not be limited to
+        textbooks, examinations, or classrooms.
+      </p>
+
+      <p>
+        We aim to make learning more practical, collaborative,
+        engaging, and connected to real-world experiences.
+      </p>
+
+      <p>
+        Through research projects, workshops, competitions,
+        Olympiads, skill-development programs, collaborative
+        assignments, educational initiatives, and interdisciplinary
+        projects, members will have opportunities to explore subjects
+        beyond their regular academic requirements.
+      </p>
+
+      <p>
+        For instance, students studying science may collaborate on
+        a research topic connected to concepts they are already
+        learning in their academic curriculum. By investigating the
+        subject more deeply, collecting information, analyzing ideas,
+        writing research-based content, and working with other
+        students, they can strengthen their understanding while
+        developing research, writing, communication, teamwork,
+        and analytical skills.
+      </p>
+
+      <p>
+        In this way, UNIVA seeks to make education more enjoyable
+        while helping students develop knowledge that extends
+        beyond examination preparation.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     SKILLS
+====================================================== -->
+
+<section class="section" id="skills">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ Developing Skills for the Future
+      </div>
+
+      <h2>
+        Skills you can actually use.
+      </h2>
+
+      <p>
+        Academic knowledge is important, but young people also need
+        practical skills to navigate an increasingly connected world.
+      </p>
+
+    </div>
+
+    <div class="skill-grid">
+
+      <div class="skill-item"><span>✦</span> Leadership and teamwork</div>
+      <div class="skill-item"><span>✦</span> Public speaking and communication</div>
+      <div class="skill-item"><span>✦</span> Research and academic writing</div>
+      <div class="skill-item"><span>✦</span> Critical thinking and problem solving</div>
+      <div class="skill-item"><span>✦</span> Creativity and innovation</div>
+      <div class="skill-item"><span>✦</span> Entrepreneurship and business</div>
+      <div class="skill-item"><span>✦</span> Digital literacy</div>
+      <div class="skill-item"><span>✦</span> Artificial intelligence and emerging technologies</div>
+      <div class="skill-item"><span>✦</span> Media and content creation</div>
+      <div class="skill-item"><span>✦</span> Project management</div>
+      <div class="skill-item"><span>✦</span> Presentation and networking</div>
+      <div class="skill-item"><span>✦</span> Time management and organization</div>
+      <div class="skill-item"><span>✦</span> Collaboration and interpersonal skills</div>
+
+    </div>
+
+    <div class="text-wrap" style="margin-top:40px">
+
+      <p>
+        Through workshops, training sessions, practical projects,
+        mentorship, peer learning, and collaborative activities,
+        members will be encouraged to continuously develop themselves.
+      </p>
+
+      <p>
+        We want members to leave UNIVA not only with experiences
+        and certificates, but with skills they can actually use.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     LEARNING THROUGH TEACHING
+====================================================== -->
+
+<section class="section soft">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ Learning Through Teaching
+      </div>
+
+      <h2>
+        Learn. Understand. Teach. Share.
+      </h2>
+
+    </div>
+
+    <div class="text-wrap">
+
+      <p>
+        One of UNIVA's future goals is to develop a youth-led
+        educational platform where young people can become educators
+        and share their knowledge with other students.
+      </p>
+
+      <p>
+        We believe that teaching is one of the most powerful forms
+        of learning.
+      </p>
+
+      <p>
+        When a student teaches a concept to someone else, they are
+        required to understand that concept more clearly, organize
+        their thoughts, communicate effectively, and respond to questions.
+      </p>
+
+      <p>
+        Therefore, UNIVA aims to create opportunities where members
+        can teach, mentor, conduct peer-learning sessions, prepare
+        educational content, and support younger learners.
+      </p>
+
+    </div>
+
+    <div class="cycle">
+
+      <div class="cycle-item">Learn</div>
+      <div class="cycle-arrow">→</div>
+      <div class="cycle-item">Understand</div>
+      <div class="cycle-arrow">→</div>
+      <div class="cycle-item">Teach</div>
+      <div class="cycle-arrow">→</div>
+      <div class="cycle-item">Share</div>
+      <div class="cycle-arrow">→</div>
+      <div class="cycle-item">Learn More</div>
+
+    </div>
+
+    <div class="text-wrap" style="margin-top:35px">
+
+      <p>
+        Through this approach, students can develop both their
+        academic understanding and their communication, leadership,
+        and mentoring abilities.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     RESEARCH
+====================================================== -->
+
+<section class="section" id="research">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ Research, Projects & Innovation
+      </div>
+
+      <h2>
+        Move from learning about ideas to working with ideas.
+      </h2>
+
+      <p>
+        Members can work together on real-world problems and develop
+        research, projects, solutions, and initiatives.
+      </p>
+
+    </div>
+
+    <div class="text-wrap">
+
+      <p>
+        UNIVA aims to create opportunities for young people to move
+        from simply learning about ideas to working with ideas.
+      </p>
+
+      <p>
+        Members will have opportunities to participate in collaborative
+        projects related to areas such as:
+      </p>
+
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3>Science and Research</h3>
+        <p>
+          Explore questions, investigate topics, conduct research,
+          analyze information, and communicate findings.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Technology and Innovation</h3>
+        <p>
+          Explore technology-based ideas, emerging technologies,
+          digital solutions, and innovative approaches.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Business and Entrepreneurship</h3>
+        <p>
+          Develop entrepreneurial ideas, business concepts,
+          strategies, and practical projects.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Education</h3>
+        <p>
+          Create educational resources, peer-learning activities,
+          mentoring initiatives, and learning platforms.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Environment and Sustainability</h3>
+        <p>
+          Explore environmental challenges, sustainability ideas,
+          awareness initiatives, and community projects.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Social Development</h3>
+        <p>
+          Work on initiatives that address community needs and
+          encourage meaningful social participation.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Media and Communication</h3>
+        <p>
+          Develop content, campaigns, publications, media projects,
+          storytelling, and communication initiatives.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Arts and Creativity</h3>
+        <p>
+          Showcase creative abilities through artistic projects,
+          design, writing, and creative expression.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Community Development</h3>
+        <p>
+          Develop projects and initiatives designed to contribute
+          positively to communities.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="text-wrap" style="margin-top:40px">
+
+      <p>
+        Members with similar interests can form project teams,
+        explore real-world problems, conduct research, develop
+        solutions, prepare presentations or publications, and
+        showcase their work.
+      </p>
+
+      <p>
+        Our long-term goal is to create an environment where a
+        student's idea does not remain simply an idea. With the
+        right team, guidance, resources, and platform, that idea
+        can develop into a project, research work, initiative,
+        or practical solution.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     OLYMPIADS
+====================================================== -->
+
+<section class="section soft" id="competitions">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ International Olympiads & Competitions
+      </div>
+
+      <h2>
+        Challenge yourself on an international platform.
+      </h2>
+
+    </div>
+
+    <div class="text-wrap">
+
+      <p>
+        UNIVA also aims to organize and facilitate international-level
+        Olympiads, competitions, challenges, talent showcases, and
+        knowledge-based events across different fields.
+      </p>
+
+      <p>
+        These activities may include academic subjects, science,
+        technology, mathematics, business, entrepreneurship,
+        creativity, public speaking, writing, innovation, and other
+        areas in which young people can demonstrate their abilities.
+      </p>
+
+      <p>
+        Through these platforms, students from different countries
+        will have opportunities to compete, collaborate, exchange
+        ideas, and represent their communities on an international stage.
+      </p>
+
+      <p>
+        Our goal is not simply to create competitions, but to create
+        experiences through which young people can challenge themselves,
+        discover their abilities, learn from others, and gain confidence.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     GLOBAL COMMUNITY
+====================================================== -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ A Global Youth Community
+      </div>
+
+      <h2>
+        Connecting young people beyond borders.
+      </h2>
+
+    </div>
+
+    <div class="text-wrap">
+
+      <p>
+        One of UNIVA's long-term goals is to build a community
+        consisting of thousands of young members from countries
+        around the world.
+      </p>
+
+      <p>
+        We envision a truly international network where students
+        from different countries, cultures, academic backgrounds,
+        and communities can connect with one another.
+      </p>
+
+      <p>
+        As the community grows, UNIVA aims to establish international
+        chapters, partnerships, collaborations, events, exchanges,
+        projects, and youth-led initiatives.
+      </p>
+
+      <p>
+        Our vision is to create a platform where a student can connect
+        with another young person from another part of the world,
+        work together on a project, exchange knowledge, participate
+        in an international event, or simply learn from a different
+        perspective.
+      </p>
+
+      <p>
+        We want geography to become less of a barrier to collaboration.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     LOCAL TO GLOBAL
+====================================================== -->
+
+<section class="section soft">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ From Local Ideas to Global Platforms
+      </div>
+
+      <h2>
+        A pathway from interest to global exposure.
+      </h2>
+
+    </div>
+
+    <div class="text-wrap">
+
+      <p>
+        UNIVA aims to provide young people with opportunities to
+        demonstrate their work beyond their immediate communities.
+      </p>
+
+      <p>
+        Research projects, innovations, creative works, social
+        initiatives, entrepreneurial ideas, educational content,
+        and other member-led projects can be presented through
+        UNIVA's platforms and international activities.
+      </p>
+
+      <p>
+        As the organization develops, we aim to organize international
+        conferences, summits, competitions, exhibitions, showcases,
+        youth exchanges, collaborative projects, and other global
+        initiatives.
+      </p>
+
+      <p>
+        The objective is to create a pathway through which young
+        people can move from:
+      </p>
+
+    </div>
+
+    <div class="pathway">
+
+      <div class="path-step">Interest</div>
+      <div class="path-arrow">→</div>
+
+      <div class="path-step">Learning</div>
+      <div class="path-arrow">→</div>
+
+      <div class="path-step">Skill Development</div>
+      <div class="path-arrow">→</div>
+
+      <div class="path-step">Collaboration</div>
+      <div class="path-arrow">→</div>
+
+      <div class="path-step">Project</div>
+      <div class="path-arrow">→</div>
+
+      <div class="path-step">Showcase</div>
+      <div class="path-arrow">→</div>
+
+      <div class="path-step">Global Exposure</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     FUTURE PLATFORMS
+====================================================== -->
+
+<section class="section" id="future">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ Future Platforms & Initiatives
+      </div>
+
+      <h2>
+        Building an ecosystem of opportunities.
+      </h2>
+
+    </div>
+
+    <div class="text-wrap">
+
+      <p>
+        UNIVA is envisioned not only as a youth community but as an
+        ecosystem of opportunities.
+      </p>
+
+      <p>
+        As the organization grows, we aim to establish different
+        platforms, programs, initiatives, and foundations under the
+        broader UNIVA network.
+      </p>
+
+      <p>
+        These may include educational platforms, research initiatives,
+        youth development programs, skill-development programs, social
+        initiatives, media platforms, innovation programs, community
+        projects, and other specialized initiatives designed to serve
+        different needs of young people.
+      </p>
+
+      <p>
+        Each initiative will have its own purpose while remaining
+        connected to the larger vision of developing and empowering youth.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     LONG TERM VISION
+====================================================== -->
+
+<section class="section soft">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ Our Long-Term Vision
+      </div>
+
+      <h2>
+        Building an international youth ecosystem.
+      </h2>
+
+    </div>
+
+    <div class="text-wrap">
+
+      <p>
+        Our long-term vision is to build an international youth
+        ecosystem where young people can find opportunities to:
+      </p>
+
+      <div class="tags">
+
+        <span class="tag">Discover their potential</span>
+        <span class="tag">Develop their abilities</span>
+        <span class="tag">Connect with others</span>
+        <span class="tag">Learn from different perspectives</span>
+        <span class="tag">Teach and share knowledge</span>
+        <span class="tag">Research and innovate</span>
+        <span class="tag">Build meaningful projects</span>
+        <span class="tag">Take leadership</span>
+        <span class="tag">Showcase their talents</span>
+        <span class="tag">Compete internationally</span>
+        <span class="tag">Create opportunities for others</span>
+        <span class="tag">Contribute meaningfully to society</span>
+
+      </div>
+
+      <p style="margin-top:30px">
+        We envision a future where a student does not have to wait
+        until adulthood to make an impact.
+      </p>
+
+      <p>
+        A young person can learn something, gather a team, develop
+        an idea, conduct research, build a project, teach others,
+        organize an initiative, and present their work to an
+        international audience.
+      </p>
+
+      <p>
+        UNIVA aims to help make that possible.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     VISION & MISSION
+====================================================== -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ Direction
+      </div>
+
+      <h2>
+        Our Vision & Mission
+      </h2>
+
+    </div>
+
+    <div class="vision-grid">
+
+      <div class="vision-box">
+
+        <h3>Our Vision</h3>
+
+        <p>
+          To build a united, empowered, skilled, innovative, and
+          globally connected generation of young people who discover
+          their potential, pursue their aspirations, and create
+          meaningful impact.
+        </p>
+
+      </div>
+
+      <div class="vision-box">
+
+        <h3>Our Mission</h3>
+
+        <p>
+          To unite young people worldwide, discover and nurture their
+          potential, develop practical and future-ready skills, create
+          meaningful opportunities, encourage leadership and innovation,
+          support youth-led research and projects, facilitate
+          international collaboration, showcase talent, and empower
+          young people to transform ideas into action.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     CORE PRINCIPLES
+====================================================== -->
+
+<section class="section soft">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ Our Core Principles
+      </div>
+
+      <h2>
+        What guides UNIVA
+      </h2>
+
+    </div>
+
+    <div class="principle-grid">
+
+      <div class="principle">
+        <h3>Unity</h3>
+        <p>
+          Bringing young people from different backgrounds,
+          communities, disciplines, and countries together through
+          collaboration.
+        </p>
+      </div>
+
+      <div class="principle">
+        <h3>Potential</h3>
+        <p>
+          Recognizing that every young person has unique abilities,
+          interests, and possibilities worth developing.
+        </p>
+      </div>
+
+      <div class="principle">
+        <h3>Opportunity</h3>
+        <p>
+          Creating meaningful platforms through which young people
+          can learn, participate, lead, create, and grow.
+        </p>
+      </div>
+
+      <div class="principle">
+        <h3>Leadership</h3>
+        <p>
+          Encouraging young people to take initiative, accept
+          responsibility, lead projects, and create opportunities
+          for others.
+        </p>
+      </div>
+
+      <div class="principle">
+        <h3>Innovation</h3>
+        <p>
+          Supporting creativity, research, new ideas, experimentation,
+          problem solving, and forward thinking.
+        </p>
+      </div>
+
+      <div class="principle">
+        <h3>Collaboration</h3>
+        <p>
+          Connecting young people with others who share their interests
+          while encouraging interdisciplinary and international cooperation.
+        </p>
+      </div>
+
+      <div class="principle">
+        <h3>Learning</h3>
+        <p>
+          Promoting continuous learning through education, experience,
+          research, practice, collaboration, and teaching.
+        </p>
+      </div>
+
+      <div class="principle">
+        <h3>Empowerment</h3>
+        <p>
+          Giving young people the confidence, skills, knowledge,
+          exposure, and platforms needed to turn their potential into action.
+        </p>
+      </div>
+
+      <div class="principle">
+        <h3>Impact</h3>
+        <p>
+          Encouraging members to use their knowledge, talents, and
+          abilities to contribute positively to their communities
+          and the wider world.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     WHAT WE AIM TO BUILD
+====================================================== -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ What We Aim to Build
+      </div>
+
+      <h2>
+        More than an organization.
+      </h2>
+
+    </div>
+
+    <div class="text-wrap">
+
+      <p>
+        UNIVA ultimately aims to become more than an organization.
+      </p>
+
+      <p>
+        We aim to build a global youth ecosystem where students can
+        find people who share their interests, discover opportunities,
+        develop valuable skills, participate in meaningful projects,
+        access international platforms, teach and learn from one
+        another, and transform their ambitions into real-world experiences.
+      </p>
+
+      <p>
+        From academic learning to research, from skills to innovation,
+        from local initiatives to international collaboration, UNIVA
+        seeks to create a space where young people are not simply
+        preparing for the future—
+      </p>
+
+      <div class="highlight">
+        they are actively building it.
+        <br>
+        <span style="font-size:.85rem;font-weight:650">
+          UNIVA Youth Council
+        </span>
+      </div>
+
+      <p style="margin-top:25px;font-weight:800;color:var(--navy)">
+        United Network of Innovative Visionaries & Achievers
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     DEPARTMENTS
+====================================================== -->
+
 <section class="section soft" id="departments">
-<div class="container"><div class="section-head"><div class="eyebrow">✦ Our focus</div><h2>Opportunities to grow and contribute</h2><p>Discover spaces where your ideas, talents, and teamwork can create meaningful outcomes.</p></div>
-<div class="features">
-<div class="feature"><div class="icon">◈</div><h3>Leadership</h3><p>Build confidence, communication skills, and leadership experience through active participation.</p></div>
-<div class="feature"><div class="icon">✦</div><h3>Skill Development</h3><p>Explore your interests and develop practical skills through workshops, tasks, and projects.</p></div>
-<div class="feature"><div class="icon">◎</div><h3>Global Network</h3><p>Connect and collaborate with students from different schools, communities, and countries.</p></div>
-</div></div>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ Departments
+      </div>
+
+      <h2>
+        Where members can contribute and grow
+      </h2>
+
+      <p>
+        Different departments create different ways for members
+        to use their interests and abilities.
+      </p>
+
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+        <div class="icon">◈</div>
+        <h3>Programs & Events</h3>
+        <p>
+          Support programs, workshops, competitions, Olympiads,
+          events, projects, and skill-building activities.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="icon">✦</div>
+        <h3>Media & Communications</h3>
+        <p>
+          Contribute to content creation, communication, visual
+          branding, media campaigns, and public representation.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="icon">◎</div>
+        <h3>Outreach & Partnerships</h3>
+        <p>
+          Build relationships, explore collaborations, support
+          partnerships, and connect UNIVA with communities and organizations.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="icon">◇</div>
+        <h3>Youth Development</h3>
+        <p>
+          Support mentorship, leadership development, youth programs,
+          and initiatives designed to empower young people.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="icon">⌁</div>
+        <h3>Research & Innovation</h3>
+        <p>
+          Explore research ideas, interdisciplinary projects,
+          innovation, problem solving, and emerging fields.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="icon">✧</div>
+        <h3>Community Initiatives</h3>
+        <p>
+          Participate in projects and activities designed to create
+          meaningful contributions within communities.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
+
+
+<!-- ======================================================
+     ACTIVITIES
+====================================================== -->
+
 <section class="section" id="events">
-<div class="container"><div class="section-head"><div class="eyebrow">✦ Stay connected</div><h2>Activities & projects</h2><p>Keep an eye on this space for upcoming initiatives, events, and community updates.</p></div>
-<div class="events">
-<div class="event"><div class="event-date">Upcoming</div><h3>Leadership & teamwork</h3><p>Opportunities to participate in collaborative activities and build leadership experience.</p></div>
-<div class="event"><div class="event-date">Community</div><h3>Student-led projects</h3><p>Work with fellow members to plan and execute meaningful projects.</p></div>
-<div class="event"><div class="event-date">Updates</div><h3>UNIVA announcements</h3><p>News, member highlights, achievements, and important organizational updates.</p></div>
-</div></div>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ Activities & Projects
+      </div>
+
+      <h2>
+        Learn by doing.
+      </h2>
+
+      <p>
+        UNIVA's activities are designed to give members practical
+        opportunities to participate, collaborate, and grow.
+      </p>
+
+    </div>
+
+    <div class="event-grid">
+
+      <div class="event">
+        <div class="event-label">LEADERSHIP</div>
+        <h3>Leadership & Teamwork</h3>
+        <p>
+          Participate in collaborative activities, take responsibility,
+          lead teams, and build leadership experience.
+        </p>
+      </div>
+
+      <div class="event">
+        <div class="event-label">PROJECTS</div>
+        <h3>Student-led Projects</h3>
+        <p>
+          Work with fellow members to plan, develop, and execute
+          meaningful projects and initiatives.
+        </p>
+      </div>
+
+      <div class="event">
+        <div class="event-label">LEARNING</div>
+        <h3>Workshops & Training</h3>
+        <p>
+          Develop practical skills through workshops, training
+          sessions, bootcamps, mentorship, and peer learning.
+        </p>
+      </div>
+
+      <div class="event">
+        <div class="event-label">COMPETITIONS</div>
+        <h3>Olympiads & Challenges</h3>
+        <p>
+          Participate in academic, creative, technological,
+          entrepreneurial, and knowledge-based competitions.
+        </p>
+      </div>
+
+      <div class="event">
+        <div class="event-label">RESEARCH</div>
+        <h3>Research Initiatives</h3>
+        <p>
+          Explore research topics, collaborate with peers, and
+          develop research-based work and presentations.
+        </p>
+      </div>
+
+      <div class="event">
+        <div class="event-label">COMMUNITY</div>
+        <h3>Youth Initiatives</h3>
+        <p>
+          Participate in social initiatives, awareness activities,
+          community projects, and youth-led programs.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
+
+
+<!-- ======================================================
+     MEMBERS' PANEL
+====================================================== -->
+
 <section class="section soft" id="team">
-<div class="container"><div class="section-head"><div class="eyebrow">✦ Leadership & community</div><h2>Members' Panel</h2><p>Explore the people working together to build the UNIVA Youth Council. Photos and detailed profiles can be added whenever you are ready.</p></div>
-<div class="member-grid" id="memberGrid"></div></div>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        ✦ Leadership & Community
+      </div>
+
+      <h2>
+        Members' Panel
+      </h2>
+
+      <p>
+        Meet the young people contributing their skills, ideas,
+        leadership, and dedication to the UNIVA Youth Council.
+      </p>
+
+    </div>
+
+    <div class="member-grid" id="memberGrid"></div>
+
+  </div>
+
 </section>
+
+
+<!-- ======================================================
+     INTERNATIONAL ALLIANCES
+====================================================== -->
 
 <section class="section" id="international-alliances">
 
@@ -546,9 +2408,13 @@ footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
 
     <div class="section-head">
 
-      <div class="eyebrow">✦ International Alliances</div>
+      <div class="eyebrow">
+        ✦ International Alliances
+      </div>
 
-      <h2>Canada Country Chapter</h2>
+      <h2>
+        Canada Country Chapter
+      </h2>
 
       <p>
         Meet the representative leading UNIVA Youth Council's
@@ -562,21 +2428,31 @@ footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
       <article class="member-card">
 
         <div class="member-photo">
+
           <img
             src="ahnaf-juhair-haq.png"
             alt="Ahnaf Juhair Haq"
+            loading="lazy"
           >
+
         </div>
 
         <div class="member-body">
 
-          <small>CANADA COUNTRY CHAPTER</small>
+          <small>
+            CANADA COUNTRY CHAPTER
+          </small>
 
-          <h3>Ahnaf Juhair Haq</h3>
+          <h3>
+            Ahnaf Juhair Haq
+          </h3>
 
-          <p style="color:var(--blue);font-weight:800;margin-bottom:18px;">
-            Country Director – Canada<br>
+          <p style="color:var(--blue);font-weight:800">
+
+            Country Director – Canada
+            <br>
             Advisor, Youth Development Department
+
           </p>
 
           <button
@@ -596,37 +2472,74 @@ footer p{color:#aac4dd;font-size:.9rem;margin-top:12px}
 
 </section>
 
-<script>
-function showAhnafProfile() {
 
-  document.getElementById('profileName').textContent =
-    'Ahnaf Juhair Haq';
-
-  document.getElementById('profileRole').textContent =
-    'Country Director – Canada | Advisor, Youth Development Department';
-
-  document.getElementById('profileDetails').textContent =
-`I am passionate about empowering young people, creating impactful social awareness, and driving meaningful youth development programs. Through my experiences in peer mentorship, community tutoring, and volunteering initiatives—from environmental projects to health awareness campaigns—I have seen the power of community-driven action firsthand.
-
-As the Country Director for Canada and Advisor for Youth Development at UNIVA Youth Council, my mission is to provide strategic guidance, lead our national team, bridge international youth networks, empower students with essential mentorship, and organize forward-thinking initiatives that inspire positive change locally and globally.`;
-
-  document.getElementById('profileModal').classList.add('open');
-}
-</script>
+<!-- ======================================================
+     CTA
+====================================================== -->
 
 <section class="cta">
-<h2>Ready to discover your potential?</h2><p>Join UNIVA Youth Council and become part of a growing platform for students who want to learn, lead, and make an impact.</p><a class="btn btn-primary" href="https://forms.gle/dPi4fUcuQEHvVdu19" target="_blank">JOIN UNIVA TODAY ↗</a>
+
+  <h2>
+    Ready to discover your potential?
+  </h2>
+
+  <p>
+    Join UNIVA Youth Council and become part of a growing global
+    platform where young people can learn, lead, collaborate,
+    create, and make an impact.
+  </p>
+
+  <a
+    href="https://forms.gle/dPi4fUcuQEHvVdu19"
+    target="_blank"
+    rel="noopener"
+    class="btn btn-primary"
+  >
+    JOIN UNIVA TODAY ↗
+  </a>
+
 </section>
+
+
 </main>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
 <footer>
+
   <div class="container footer-grid">
+
     <div>
-      <a class="logo" href="#">
-        <span class="logo-mark">U</span>
-        <span>UNIVA YOUTH COUNCIL</span>
+
+      <a href="#" class="logo">
+
+        <span
+          style="
+            width:42px;
+            height:42px;
+            border-radius:12px;
+            background:linear-gradient(135deg,#103b73,#247fca);
+            color:#fff;
+            display:grid;
+            place-items:center;
+            font-weight:900;
+          "
+        >
+          U
+        </span>
+
+        <span>
+          UNIVA YOUTH COUNCIL
+        </span>
+
       </a>
 
-      <p>Empowering youth. Inspiring change.</p>
+      <p>
+        Empowering youth. Inspiring change.
+      </p>
 
       <p>
         <strong>Official Email:</strong>
@@ -634,17 +2547,22 @@ As the Country Director for Canada and Advisor for Youth Development at UNIVA Yo
           univayouthcouncil@gmail.com
         </a>
       </p>
+
     </div>
 
     <div class="footer-links">
+
       <a href="#about">About</a>
+      <a href="#purpose">Purpose</a>
+      <a href="#members-do">Members</a>
       <a href="#departments">Departments</a>
-      <a href="#events">Events</a>
-      <a href="#team">Members</a>
+      <a href="#events">Activities</a>
+      <a href="#team">Members' Panel</a>
 
       <a
         href="https://www.facebook.com/share/1DjGgJCPkK/"
         target="_blank"
+        rel="noopener"
       >
         Facebook ↗
       </a>
@@ -652,165 +2570,318 @@ As the Country Director for Canada and Advisor for Youth Development at UNIVA Yo
       <a
         href="https://www.instagram.com/univayouthcouncil?stkn=MXU3ZGh4ZGZpNmd6MQ=="
         target="_blank"
+        rel="noopener"
       >
         Instagram ↗
       </a>
+
     </div>
+
   </div>
+
 </footer>
 
-<div class="profile-modal" id="profileModal">
-  <div class="profile-box">
-    <button class="profile-close" id="profileClose">&times;</button>
+
+<!-- ======================================================
+     PROFILE MODAL
+====================================================== -->
+
+<div
+  class="modal"
+  id="profileModal"
+  aria-hidden="true"
+>
+
+  <div
+    class="modal-box"
+    role="dialog"
+    aria-modal="true"
+  >
+
+    <button
+      class="modal-close"
+      id="modalClose"
+      aria-label="Close profile"
+    >
+      ×
+    </button>
+
     <h2 id="profileName"></h2>
-    <div class="role" id="profileRole"></div>
-    <p id="profileDetails"></p>
+
+    <div
+      class="modal-role"
+      id="profileRole"
+    ></div>
+
+    <div
+      class="modal-details"
+      id="profileDetails"
+    ></div>
+
   </div>
+
 </div>
 
+
 <script>
+
 const members = [
-  // Founder & President
-  {
-    name: 'Shahjaib Mohammad Hassan (Areeb)',
-    role: 'Founder & President',
-    photo: 'shahjaib.png',
-    details: [
-      'Assalamu Alaikum!',
-      'I believe every young person has unique potential, talents, and ideas that deserve the right opportunities and support.',
-      'This belief inspired me to establish the UNIVA Youth Council (United Network of Innovative Visionaries & Achievers).',
-      'As the Founder and President of UNIVA, my vision is to build a united and globally connected youth platform where students from different backgrounds, schools, and countries can discover their potential, develop new skills, exchange ideas, and grow together.',
-      'I want UNIVA to be more than just an organization. I envision it as a community where young people can gain practical experience, take on leadership roles, showcase their talents, collaborate on meaningful projects, and turn their ideas into action.',
-      'Beyond my work with UNIVA, I have participated in Model United Nations and various organizational activities. I have served as a Campus Ambassador for AKADMUN II, MAMUN V, and ASTMUN. I have also served at AGUN and AGUNMUN Session I.',
-      'Currently, I serve as the President of the Event Organizing Department at Mangrove School.',
-      'I am also involved in public health research and am a member of the TESOL Bangladesh Family.',
-      'I am passionate about public speaking, content creation, media, and hosting international events.',
-      'Through UNIVA, I hope to create meaningful opportunities that empower young people and help them grow.'
-    ].join('\n\n')
-  },
-
-  // Department Head
-  {
-    name: 'Farhan Mahamud',
-    role: 'Department Head, Programs & Events Department',
-    photo: 'farhan-mahamud.png',
-    details: [
-      'Having spent years competing at national platforms, participating in 17 competitions and securing 8 championships alongside 3 runner-up titles, I have experienced firsthand the transformative power of academic challenges and leadership opportunities.',
-      'My journey as a National Olympiad achiever, combined with three consecutive years of student leadership as a School Prefect, Central Discipline Prefect, and House Prefect, has shaped my passion for mentoring others and building structured, highly disciplined environments.',
-      'As the Department Head of Programs & Events, my vision for UNIVA Youth Council is to build a vibrant platform where students do not just participate in events, but discover their true potential.',
-      'I am dedicated to designing national and international-level Olympiads, hands-on workshops, and skill-building bootcamps that directly empower young minds.',
-      'By providing guidance in project creation, problem-solving, and competitive training, my goal is to lead an active, impactful department that elevates youth talent across the nation and drives real, positive change.'
-    ].join('\n\n')
-  },
-
-  // Deputy Department Heads
-  {
-    name: 'Tance Islam Shaolen',
-    role: 'Deputy Department Head, Programs & Events Department',
-    photo: 'tance-islam-shaolen.png',
-    details: [
-      'I am passionate about technology, community service, and learning new skills.',
-      'I enjoy helping others, working in teams, and finding creative solutions to everyday challenges.',
-      'My interests include event management, public relations, and content writing. I have skills in communication, problem-solving, and teamwork.',
-      'I have participated in college debate competitions, volunteered with a local youth welfare organization, and led college group projects, which helped me develop my leadership and collaboration skills.',
-      'I joined UNIVA Youth Council to discover my potential, strengthen my leadership and communication skills, and connect with like-minded young people.',
-      "I am dedicated to contributing to UNIVA's events, projects, and initiatives while working with the team to create meaningful opportunities for youth, support community development, and help build a platform where young people can grow and succeed."
-    ].join('\n\n')
-  },
 
   {
-    name: 'Meherun Nesa (Mohona)',
-    role: 'Deputy Department Head, Media & Communications Department',
-    photo: 'meherun-nesa-mohona.png',
-    details: [
-      'As an active communicator with experience in institutional representation and youth projects, I believe that compelling storytelling and strategic communication are at the heart of every successful movement. My background in debate, content creation, and public speaking has taught me how to articulate ideas clearly and connect meaningfully with diverse audiences.',
-      "In my role as Deputy Department Head of Media & Communications, my goal is to elevate UNIVA Youth Council's public voice, refine our visual branding, and amplify the impact of our initiatives. I am committed to fostering a creative, collaborative space for our members where we can create inspiring content, manage dynamic media campaigns, and showcase UNIVA's vision across all platforms."
-    ].join('\n\n')
+    name: "Shahjaib Mohammad Hassan (Areeb)",
+
+    role: "Founder & President",
+
+    photo: "shahjaib.png",
+
+    details: `Assalamu Alaikum!
+
+I believe every young person has unique potential, talents, and ideas that deserve the right opportunities and support.
+
+This belief inspired me to establish the UNIVA Youth Council (United Network of Innovative Visionaries & Achievers).
+
+As the Founder and President of UNIVA, my vision is to build a united and globally connected youth platform where students from different backgrounds, schools, and countries can discover their potential, develop new skills, exchange ideas, and grow together.
+
+I want UNIVA to be more than just an organization. I envision it as a community where young people can gain practical experience, take on leadership roles, showcase their talents, collaborate on meaningful projects, and turn their ideas into action.
+
+Beyond my work with UNIVA, I have participated in Model United Nations and various organizational activities. I have served as a Campus Ambassador for AKADMUN II, MAMUN V, and ASTMUN. I have also served at AGUN and AGUNMUN Session I.
+
+Currently, I serve as the President of the Event Organizing Department at Mangrove School.
+
+I am also involved in public health research and am a member of the TESOL Bangladesh Family.
+
+I am passionate about public speaking, content creation, media, and hosting international events.
+
+Through UNIVA, I hope to create meaningful opportunities that empower young people and help them grow.`
   },
 
-  // Executive Member
-{
-  name: 'Israt Jahan Eva',
-  role: 'Executive Member, Programs & Events Department',
-  photo: 'israt-jahan-eva.png',
-  details: [
-    'YOUR EXISTING ISrat FIRST PARAGRAPH',
-    'YOUR EXISTING ISrat SECOND PARAGRAPH',
-    'YOUR EXISTING ISrat THIRD PARAGRAPH'
-  ].join('\n\n')
-},
 
-// Deputy Department Head — Outreach & Partnerships
-{
-  name: 'Bibi Marium Anusha',
-  role: 'Deputy Department Head, Outreach & Partnerships Department',
-  photo: 'bibi-marium-anusha.png',
-  details: [
-    'I believe true leadership begins with effective communication and a deep commitment to empowering others. Having served as a senior volunteer, club vice president, debate judge, and junior trainer at Ain o Salish Kendra, I have seen firsthand how passion and advocacy can drive meaningful impact in our communities. My primary interests lie in youth empowerment, human rights, and leadership development—fields where active engagement and structured teamwork create lasting change.',
+  {
+    name: "Farhan Mahamud",
 
-    'Joining the UNIVA Youth Council is a step toward expanding these efforts. In my role within Outreach & Partnerships, my goal is to take complete ownership of my responsibilities, forge strong collaborative relationships, and build structured empowerment programs, charity drives, and youth workshops. I look forward to giving my full effort, contributing my skills, and continuously learning alongside a dedicated network of young leaders.'
-  ].join('\n\n')
-}
+    role: "Department Head, Programs & Events Department",
+
+    photo: "farhan-mahamud.png",
+
+    details: `Having spent years competing at national platforms, participating in 17 competitions and securing 8 championships alongside 3 runner-up titles, I have experienced firsthand the transformative power of academic challenges and leadership opportunities.
+
+My journey as a National Olympiad achiever, combined with three consecutive years of student leadership as a School Prefect, Central Discipline Prefect, and House Prefect, has shaped my passion for mentoring others and building structured, highly disciplined environments.
+
+As the Department Head of Programs & Events, my vision for UNIVA Youth Council is to build a vibrant platform where students do not just participate in events, but discover their true potential.
+
+I am dedicated to designing national and international-level Olympiads, hands-on workshops, and skill-building bootcamps that directly empower young minds.
+
+By providing guidance in project creation, problem-solving, and competitive training, my goal is to lead an active, impactful department that elevates youth talent across the nation and drives real, positive change.`
+  },
+
+
+  {
+    name: "Tance Islam Shaolen",
+
+    role: "Deputy Department Head, Programs & Events Department",
+
+    photo: "tance-islam-shaolen.png",
+
+    details: `I am passionate about technology, community service, and learning new skills.
+
+I enjoy helping others, working in teams, and finding creative solutions to everyday challenges.
+
+My interests include event management, public relations, and content writing. I have skills in communication, problem-solving, and teamwork.
+
+I have participated in college debate competitions, volunteered with a local youth welfare organization, and led college group projects, which helped me develop my leadership and collaboration skills.
+
+I joined UNIVA Youth Council to discover my potential, strengthen my leadership and communication skills, and connect with like-minded young people.
+
+I am dedicated to contributing to UNIVA's events, projects, and initiatives while working with the team to create meaningful opportunities for youth, support community development, and help build a platform where young people can grow and succeed.`
+  },
+
+
+  {
+    name: "Meherun Nesa (Mohona)",
+
+    role: "Deputy Department Head, Media & Communications Department",
+
+    photo: "meherun-nesa-mohona.png",
+
+    details: `As an active communicator with experience in institutional representation and youth projects, I believe that compelling storytelling and strategic communication are at the heart of every successful movement. My background in debate, content creation, and public speaking has taught me how to articulate ideas clearly and connect meaningfully with diverse audiences.
+
+In my role as Deputy Department Head of Media & Communications, my goal is to elevate UNIVA Youth Council's public voice, refine our visual branding, and amplify the impact of our initiatives. I am committed to fostering a creative, collaborative space for our members where we can create inspiring content, manage dynamic media campaigns, and showcase UNIVA's vision across all platforms.`
+  },
+
+
+  {
+    name: "Israt Jahan Eva",
+
+    role: "Executive Member, Programs & Events Department",
+
+    photo: "israt-jahan-eva.png",
+
+    details: `Profile details are currently being updated.
+
+As an Executive Member of the Programs & Events Department, I contribute to UNIVA activities, projects, and initiatives while working with fellow members to create meaningful opportunities for young people.`
+  },
+
+
+  {
+    name: "Bibi Marium Anusha",
+
+    role: "Deputy Department Head, Outreach & Partnerships Department",
+
+    photo: "bibi-marium-anusha.png",
+
+    details: `I believe true leadership begins with effective communication and a deep commitment to empowering others. Having served as a senior volunteer, club vice president, debate judge, and junior trainer at Ain o Salish Kendra, I have seen firsthand how passion and advocacy can drive meaningful impact in our communities. My primary interests lie in youth empowerment, human rights, and leadership development—fields where active engagement and structured teamwork create lasting change.
+
+Joining the UNIVA Youth Council is a step toward expanding these efforts. In my role within Outreach & Partnerships, my goal is to take complete ownership of my responsibilities, forge strong collaborative relationships, and build structured empowerment programs, charity drives, and youth workshops. I look forward to giving my full effort, contributing my skills, and continuously learning alongside a dedicated network of young leaders.`
+  }
+
 ];
 
-const grid = document.getElementById('memberGrid');
-const modal = document.getElementById('profileModal');
+
+const memberGrid = document.getElementById("memberGrid");
+
+const modal = document.getElementById("profileModal");
+
+const profileName = document.getElementById("profileName");
+
+const profileRole = document.getElementById("profileRole");
+
+const profileDetails = document.getElementById("profileDetails");
+
 
 function renderMembers() {
-  grid.innerHTML = members.map((member, index) => `
+
+  memberGrid.innerHTML = members.map((member, index) => `
+
     <article class="member-card">
+
       <div class="member-photo">
-        ${
-          member.photo
-            ? `<img src="${member.photo}" alt="${member.name}">`
-            : ''
-        }
+
+        <img
+          src="${member.photo}"
+          alt="${member.name}"
+          loading="lazy"
+        >
+
       </div>
 
       <div class="member-body">
-        <small>UNIVA YOUTH COUNCIL</small>
-        <h3>${member.name}</h3>
-        <p>${member.role}</p>
-        <button class="btn btn-outline" onclick="showProfile(${index})">
+
+        <small>
+          UNIVA YOUTH COUNCIL
+        </small>
+
+        <h3>
+          ${member.name}
+        </h3>
+
+        <p>
+          ${member.role}
+        </p>
+
+        <button
+          class="btn btn-outline"
+          onclick="showProfile(${index})"
+        >
           View Details ↗
         </button>
+
       </div>
+
     </article>
-  `).join('');
+
+  `).join("");
+
 }
+
+
+function openModal(name, role, details) {
+
+  profileName.textContent = name;
+
+  profileRole.textContent = role;
+
+  profileDetails.textContent = details;
+
+  modal.classList.add("open");
+
+  modal.setAttribute("aria-hidden", "false");
+
+  document.body.style.overflow = "hidden";
+
+}
+
 
 function showProfile(index) {
+
   const member = members[index];
 
-  document.getElementById('profileName').textContent = member.name;
-  document.getElementById('profileRole').textContent = member.role;
-  document.getElementById('profileDetails').textContent = member.details;
+  openModal(
+    member.name,
+    member.role,
+    member.details
+  );
 
-  modal.classList.add('open');
 }
 
-function closeProfile() {
-  modal.classList.remove('open');
+
+function showAhnafProfile() {
+
+  openModal(
+
+    "Ahnaf Juhair Haq",
+
+    "Country Director – Canada | Advisor, Youth Development Department",
+
+    `I am passionate about empowering young people, creating impactful social awareness, and driving meaningful youth development programs. Through my experiences in peer mentorship, community tutoring, and volunteering initiatives—from environmental projects to health awareness campaigns—I have seen the power of community-driven action firsthand.
+
+As the Country Director for Canada and Advisor for Youth Development at UNIVA Youth Council, my mission is to provide strategic guidance, lead our national team, bridge international youth networks, empower students with essential mentorship, and organize forward-thinking initiatives that inspire positive change locally and globally.`
+
+  );
+
 }
+
+
+function closeModal() {
+
+  modal.classList.remove("open");
+
+  modal.setAttribute("aria-hidden", "true");
+
+  document.body.style.overflow = "";
+
+}
+
 
 document
-  .getElementById('profileClose')
-  .addEventListener('click', closeProfile);
+  .getElementById("modalClose")
+  .addEventListener("click", closeModal);
 
-modal.addEventListener('click', function(event) {
+
+modal.addEventListener("click", function(event) {
+
   if (event.target === modal) {
-    closeProfile();
+    closeModal();
   }
+
 });
 
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape') {
-    closeProfile();
+
+document.addEventListener("keydown", function(event) {
+
+  if (
+    event.key === "Escape" &&
+    modal.classList.contains("open")
+  ) {
+    closeModal();
   }
+
 });
+
 
 renderMembers();
+
 </script>
 
 </body>
+
 </html>
